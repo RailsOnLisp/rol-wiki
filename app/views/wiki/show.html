@@ -1,0 +1,10 @@
+<div class="article" id="«=(h $id)»" data-article="«=(h (j $article))»">
+  <h1 class="title"><a href="«=(h (wiki-uri $article))»">«=(h (article.title $article))»</a></h1>
+  <div style="position:relative">
+    <div class="display">
+      <div class="body">
+      « (when-let ((body (article.body $article))) (print-markdown body)) »
+      </div>
+    </div>
+  </div>
+</div>
